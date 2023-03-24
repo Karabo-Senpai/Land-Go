@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    android:padding="30dp"
+    tools:context=".Login">
+
+    <!--Image View For Application Logo-->
+    <ImageView
+        android:id="@+id/logo_img"
+        android:layout_width="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="160dp"
+        android:transitionName="logo"
+        android:src="@drawable/applogo"/>
+
+    <!--Text View For Welcoming Users Irregardless Of Them Having Logged In Or Not-->
+    <TextView
+        android:id="@+id/logo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello , Welcome Back"
+        android:layout_marginTop="0dp"
+        android:transitionName="logo_text"
+        android:textSize="36sp"
+        android:fontFamily="@font/acme"
+        android:textStyle="bold"
+        android:textColor="#ff7f50"
+        android:padding="5dp"
+        />
+
+        <!--Adding Material TextView And EditBox-->
+
+    <!--Linear Layout That Will Contain-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:textColorHint="@color/text_color3"
+            android:hint="Email"
+            android:transitionName="email_trans"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/acme"
+                android:inputType="textEmailAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:textColorHint="@color/text_color3"
+            android:hint="Password"
+            android:layout_marginTop="5dp"
+            android:transitionName="password_trans"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/acme"
+                android:inputType="textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/forgot"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="Forgot Password ?"
+            android:transitionName="forpass_trans"
+            android:fontFamily="@font/acme"
+            android:textColor="@color/text_color3"
+            android:layout_gravity="right"
+            android:elevation="0dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/logBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="#ff7f50"
+            android:fontFamily="@font/acme"
+            android:text="Log In"
+            android:textColor="@color/text_color3"
+            android:textStyle="bold"
+            android:transitionName="btn_Trans"
+            app:cornerRadius="35dp" />
+
+        <Button
+            android:id="@+id/reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="Don't Have An Account ? "
+            android:fontFamily="@font/acme"
+            android:transitionName="reg_trans"
+            android:textColor="@color/text_color3"
+            android:layout_gravity="right"
+            android:textStyle="bold"
+            android:elevation="0dp"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

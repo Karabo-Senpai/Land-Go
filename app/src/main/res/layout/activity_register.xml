@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:padding="30dp"
+    android:scrollbarStyle="outsideInset"
+    android:scrollbarSize="@dimen/cardview_default_radius"
+    tools:context=".Register">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:src="@drawable/applogo"
+            android:transitionName="logo"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome New User"
+            android:transitionName="logo_text"
+            android:textSize="36sp"
+            android:textColor="#ff7f50"
+            android:textStyle="bold"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/acme"/>
+
+
+        <!--Linear Layout For Input Fields-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp">
+            <!--- android:orientation="vertical"-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Firstname"
+                android:transitionName="firstname_trans"
+                android:textColorHint="@color/text_color3"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/acme"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Surname"
+                android:transitionName="lastname_trans"
+                android:textColorHint="@color/text_color3"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:fontFamily="@font/acme"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Address"
+                android:transitionName="email_trans"
+                android:textColorHint="@color/text_color3"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:fontFamily="@font/acme"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:transitionName="pass_trans"
+                app:passwordToggleEnabled="true"
+                android:textColorHint="@color/text_color3"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:fontFamily="@font/acme"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/conpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+                android:transitionName="cpass_trans"
+                app:passwordToggleEnabled="true"
+                android:textColorHint="@color/text_color3"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:fontFamily="@font/acme"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+        <!--Adding Register Button-->
+        <Button
+            android:id="@+id/regBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/coral"
+            android:text="Register"
+            android:fontFamily="@font/acme"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/text_color3"
+            android:textStyle="bold"
+            android:transitionName="reg_Trans" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/acme"
+            android:layout_marginTop="10dp"
+            android:text="Already Got An Account ?"
+            android:transitionName="forgotpass_trans"
+            android:textColor="@color/text_color3"
+            android:background="#00000000"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</ScrollView>

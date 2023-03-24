@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Dark Mode Color Theme-->
+
+<resources>
+
+    <color name="background_color">#121212</color>
+
+    <color name="text_color1">#ff7f50</color>
+    <color name="text_color3">#FFFFFFFF</color>
+
+
+</resources>

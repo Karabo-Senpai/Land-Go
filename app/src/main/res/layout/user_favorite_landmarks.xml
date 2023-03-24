@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_color"
+    android:layout_height="350dp"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="8dp"
+    android:layout_margin="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/landmark_name"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Landmark Name :"
+                android:fontFamily="@font/acme"
+                android:textColor="@color/black"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/land_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/landmark_name"
+                android:fontFamily="@font/acme"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="10dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/landmark_desc"
+                android:layout_width="150dp"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:text="Landmark Description :"
+                android:fontFamily="@font/acme"
+                android:textColor="@color/black"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/land_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@id/landmark_desc"
+                android:fontFamily="@font/acme"
+                android:text="Description"
+                android:textColor="@color/black"
+                android:textSize="10dp" />
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/latitude"
+                android:layout_width="150dp"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:text="Latitude :"
+                android:fontFamily="@font/acme"
+                android:textColor="@color/black"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/lati"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@id/latitude"
+                android:fontFamily="@font/acme"
+                android:text="Latitude"
+                android:textColor="@color/black"
+                android:textSize="10dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/longitude"
+                android:layout_width="150dp"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:text="Longitude :"
+                android:fontFamily="@font/acme"
+                android:textColor="@color/black"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/longi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@id/longitude"
+                android:fontFamily="@font/acme"
+                android:text="Longitude"
+                android:textColor="@color/black"
+                android:textSize="10dp" />
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

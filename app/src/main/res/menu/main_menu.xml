@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--Creating Group For Menu Items-->
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_baseline_map_24"
+            android:title="@string/view_map" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_baseline_search_24"
+            android:title="@string/search" />
+
+        <item
+            android:id="@+id/nav_preferred_landmarks"
+            android:icon="@drawable/ic_baseline_flight_land_24"
+            android:title="Preferred Landmarks" />
+
+        <item
+            android:id="@+id/nav_saved_landmarks"
+            android:icon="@drawable/ic_baseline_landscape_24"
+            android:title="@string/saved_landmarks" />
+
+    </group>
+
+
+    <item
+
+        android:title="Share &amp; Rate">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_baseline_share_24"
+                    android:title="Share" />
+                <item
+                    android:id="@+id/nav_rate"
+                    android:icon="@drawable/ic_baseline_rate_review_24"
+                    android:title="Rate Us" />
+            </group>
+        </menu>
+
+    </item>
+
+    <item
+        android:title="Profile">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/ic_baseline_person_24"
+                    android:title="@string/profile" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/ic_baseline_logout_24"
+                    android:title="@string/logout" />
+            </group>
+        </menu>
+
+    </item>
+
+    <item
+
+        android:title="Settings &amp; Support">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_settings"
+                    android:icon="@drawable/ic_baseline_settings_24"
+                    android:title="@string/settings" />
+                <item
+                    android:id="@+id/nav_help"
+                    android:icon="@drawable/ic_baseline_help_center_24"
+                    android:title="Help Centre" />
+            </group>
+        </menu>
+
+    </item>
+
+
+</menu>

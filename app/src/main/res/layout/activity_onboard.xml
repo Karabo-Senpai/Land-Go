@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:padding="20dp"
+    tools:context=".Onboard">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <Button
+        android:id="@+id/skip_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:backgroundTint="#00000000"
+        android:fontFamily="@font/acme"
+        android:textSize="14dp"
+        android:onClick="Skip"
+        android:text="@string/skip_btn"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <Button
+            android:id="@+id/get_startedBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff7f50"
+            android:fontFamily="@font/acme"
+            android:text="@string/getStarted_btn"
+            android:visibility="invisible"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:transitionName="btn_Trans" />
+
+        <LinearLayout
+            android:id="@+id/dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:orientation="horizontal"
+            android:paddingBottom="30dp" />
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="#00000000"
+            android:backgroundTint="#00000000"
+            android:drawableEnd="@drawable/next"
+            android:drawableRight="@drawable/next"
+            android:fontFamily="@font/acme"
+            android:paddingLeft="0dp"
+            android:onClick="NextSlide"
+            android:paddingBottom="30dp"
+            android:textColor="@color/text_color3"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

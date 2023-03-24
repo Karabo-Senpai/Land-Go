@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:scrollbarStyle="insideInset"
+    android:background="@color/background_color"
+    tools:context=".PreferredLandmarks">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp">
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/mapbox_ic_arrow_back" />
+
+
+            <TextView
+                android:id="@+id/pref_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/acme"
+                android:gravity="center"
+                android:text="Preferred Landmarks"
+                android:textColor="@color/coral"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/land_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/bosjes_chapel" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp">
+
+                    <TextView
+                        android:id="@+id/prompt_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Choose The Preferred Landmark Type You'd Like To See"
+                        android:textColor="@color/text_color3"
+                        android:textSize="14sp" />
+
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupLandmarks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="30dp"
+                        android:checkedButton="@+id/radio_button_1"
+                        android:gravity="left"
+                        android:orientation="vertical"
+                        android:textColor="@color/text_color3">
+
+                        <RadioButton
+                            android:id="@+id/radioAll"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:checked="false"
+                            android:drawableRight="@drawable/all"
+                            android:padding="20dp"
+                            android:text="All"
+                            android:textColor="@color/text_color3" />
+
+                        <RadioButton
+                            android:id="@+id/radioModern"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:drawableRight="@drawable/modern"
+                            android:padding="20dp"
+                            android:text="Modern"
+                            android:textColor="@color/text_color3" />
+
+                        <RadioButton
+                            android:id="@+id/radioPopular"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:drawableRight="@drawable/populat"
+                            android:padding="20dp"
+                            android:text="Popular"
+                            android:textColor="@color/text_color3" />
+
+                        <RadioButton
+                            android:id="@+id/radioHistorical"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:checked="false"
+                            android:drawableRight="@drawable/historic"
+                            android:padding="20dp"
+                            android:text="Historical"
+                            android:textColor="@color/text_color3" />
+
+                        <RadioButton
+                            android:id="@+id/radioGrafitti"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:drawableRight="@drawable/graffiti_icon"
+                            android:padding="20dp"
+                            android:text="Grafitti"
+                            android:textColor="@color/text_color3" />
+
+                        <RadioButton
+                            android:id="@+id/radioParks"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:drawableRight="@drawable/park"
+                            android:padding="20dp"
+                            android:text="Parks"
+                            android:textColor="@color/text_color3" />
+
+                        <RadioButton
+                            android:id="@+id/radioStatues"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:drawableRight="@drawable/statue"
+                            android:padding="20dp"
+                            android:text="Statues"
+                            android:textColor="@color/text_color3" />
+
+                        <RadioButton
+                            android:id="@+id/radioOther"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:drawableRight="@drawable/other"
+                            android:padding="20dp"
+                            android:text="Other"
+                            android:textColor="@color/text_color3" />
+                    </RadioGroup>
+
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/save_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@color/coral"
+                    android:fontFamily="@font/acme"
+                    android:text="Save"
+                    android:textColor="@color/text_color3"
+                    android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

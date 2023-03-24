@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    tools:context=".UserProfile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_smoke"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/back_Btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/mapbox_ic_arrow_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/acme"
+            android:gravity="center"
+            android:text="User Profile Settings"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:scrollbarStyle="outsideInset">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!---Adding Layout To Add Profile Update Form-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:background="@color/coral"
+                android:padding="20dp">
+
+                <ImageView
+                    android:id="@+id/profile_pic"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/profile_photo" />
+
+                <TextView
+                    android:id="@+id/first_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/profile_pic"
+                    android:fontFamily="@font/acme"
+                    android:includeFontPadding="false"
+                    android:text="Karabo"
+                    android:textColor="@color/text_color3"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/last_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/first_name"
+                    android:fontFamily="@font/acme"
+                    android:includeFontPadding="false"
+                    android:text="Mere"
+                    android:textColor="@color/text_color3"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/email_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/first_name"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/profile_pic"
+                    android:fontFamily="@font/acme"
+                    android:includeFontPadding="false"
+                    android:text="karabomere47@gmail.com"
+                    android:textColor="@color/text_color3"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-90dp"
+                android:padding="20dp">
+
+                <!--Adding Responsive Card View-->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/alice_blue"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/landmark" />
+
+                        <TextView
+                            android:id="@+id/favourite_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/acme"
+                            android:includeFontPadding="false"
+                            android:text="Favourite Landmarks"
+                            android:textColor="@color/text_color3"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/alice_blue"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/destination2" />
+
+                        <TextView
+                            android:id="@+id/map_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/acme"
+                            android:includeFontPadding="false"
+                            android:text="Destinations"
+                            android:textColor="@color/text_color3"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <!--Retrieved Information Section-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/acme"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/coral"
+                    android:textSize="22sp"
+                    android:gravity="center"
+                    android:text="Edit Profile"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/fname"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Firstname"
+                    android:textColorHint="@color/text_color3"
+                    android:transitionName="firstname_trans">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/acme"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/lname"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Surname"
+                    android:textColorHint="@color/black"
+                    android:transitionName="lastname_trans">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/acme"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/email"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email Address"
+                    android:textColorHint="@color/text_color3"
+                    android:transitionName="email_trans">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/acme"
+                        android:inputType="textEmailAddress" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--Adding Register Button-->
+                <Button
+                    android:id="@+id/update_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/coral"
+                    android:fontFamily="@font/acme"
+                    android:text="Update"
+                    android:textColor="@color/text_color3"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

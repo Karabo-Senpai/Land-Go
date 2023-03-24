@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/points_of_interest_image"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bighole" />
+
+        <TextView
+            android:id="@+id/point_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kimberly Big Hole"
+
+            android:fontFamily="@font/acme"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/points_of_interest_image"/>
+
+        <RatingBar
+            android:id="@+id/points_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rating="4.3"
+            android:layout_below="@id/point_name"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/points_of_interest_image"
+            style="@style/Widget.AppCompat.RatingBar.Small"/>
+
+        <TextView
+            android:id="@+id/point_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S Circular Rd, Kimberley, 8300"
+            android:layout_below="@id/points_rating"
+            android:fontFamily="@font/acme"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/points_of_interest_image"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
